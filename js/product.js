@@ -9,9 +9,11 @@ function getProducts() {
         let productData = data;
 
         let products = '';
+        let i = 0;
         productData.map((pro) => {
+          i = i + 1;
           let totalPrice = pro.Qty * pro.unitPrice;
-          products += `<tr id=${pro.id}>
+          products += `<tr id=${i}>
               <td>
                 <input
                   type="text"
@@ -34,6 +36,7 @@ function getProducts() {
                   class="productField"
                   placeholder="Qty"
                   value =${pro.Qty}
+                  onchange="return updatePrice(event,${i});" 
                 />
               </td>
               <td>
@@ -42,6 +45,7 @@ function getProducts() {
                   class="productField"
                   placeholder="Unit Price"
                   value =${pro.unitPrice}
+                  onchange="return updatePrice(event, ${i});" 
                 />
               </td>
               <td>
@@ -62,7 +66,7 @@ function getProducts() {
                 />
               </td>    
               <td>
-                <button onclick="deleteElement(${pro.id})" class="deleteButton" type="button">Delete</button>
+                <button onclick="deleteElement(${i})" class="deleteButton" type="button">Delete</button>
               </td>              
             </tr>`;
         });
@@ -76,6 +80,21 @@ function getProducts() {
     });
 }
 
-function deleteElement(el) {
-  document.getElementById(el).remove();
+function deleteElement(id) {
+  document.getElementById(id).remove();
+}
+
+function setValue(newValue, id) {
+  let t = document.getElementById(id);
+  let unit = t.cells[4].children[0];
+
+  unit.value = newValue;
+}
+
+function updatePrice(event, id) {
+  let t = document.getElementById(id);
+  var unit = t.cells[2].children[0].value;
+  var price = t.cells[3].children[0].value;
+
+  setValue(unit * price, id);
 }

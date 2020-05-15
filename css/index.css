@@ -36,6 +36,7 @@ input {
   width: 80%;
   border: 3px solid #00b4cc;
   padding: 10px;
+  margin-bottom: 5px;
   height: 13px;
   border-radius: 5px;
   outline: none;
@@ -114,6 +115,26 @@ table th {
 
 .deleteButton:hover {
   background-color: #e43018; /* Green */
+  color: white;
+}
+
+.addButton {
+  transition-duration: 0.4s;
+  border: none;
+  padding: 10px 15px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  background-color: rgb(230, 219, 219);
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.addButton:hover {
+  background-color: #20b9e7; /* Green */
   color: white;
 }
 
