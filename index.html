@@ -24,11 +24,32 @@
       <div id="dates">
         <div class="datedetails"></div>
       </div>
+      <div id="product">
+        <table>
+          <caption>
+            Product Details
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Product ID</th>
+              <th scope="col">Product Name</th>
+              <th scope="col">Qty</th>
+              <th scope="col">Unit Price</th>
+              <th scope="col">Total Price</th>
+              <th scope="col">Notes</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody class="tableDetails"></tbody>
+        </table>
+      </div>
     </div>
   </body>
   <script src="https://use.fontawesome.com/f518588d33.js"></script>
   <script src="/js/index.js"></script>
+  <script src="/js/product.js"></script>
   <script>
     getAddress();
+    getProducts();
   </script>
 </html>

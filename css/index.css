@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  padding: 60px;
+  padding: 40px;
 }
 
 #bill {
@@ -56,6 +56,65 @@ input {
   border-radius: 5px;
   outline: none;
   font-size: 20px;
+}
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: 0.5em 0 0.75em;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 0.35em;
+}
+
+table th,
+table td {
+  padding: 0.625em;
+  text-align: center;
+}
+
+table th {
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.productField {
+  border: 3px solid #00b4cc;
+  padding: 10px;
+  height: 13px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 18px;
+}
+
+.deleteButton {
+  transition-duration: 0.4s;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  background-color: rgb(230, 219, 219);
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.deleteButton:hover {
+  background-color: #e43018; /* Green */
+  color: white;
 }
 
 /* Media queries for responsiveness */
