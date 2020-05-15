@@ -15,43 +15,50 @@
 
   <body>
     <div class="container">
-      <div id="bill">
-        <div id="billDetails" class="title">Billing Address</div>
-      </div>
-      <div id="ship">
-        <div id="shipDetails" class="title">Shipping Address</div>
-      </div>
-      <div id="dates">
-        <div class="datedetails"></div>
-      </div>
-      <div id="product">
-        <table>
-          <caption>
-            Product Details
-          </caption>
-          <thead>
-            <tr>
-              <th scope="col">Product ID</th>
-              <th scope="col">Product Name</th>
-              <th scope="col">Qty</th>
-              <th scope="col">Unit Price</th>
-              <th scope="col">Total Price</th>
-              <th scope="col">Notes</th>
-              <th scope="col"></th>
-            </tr>
-          </thead>
-          <tbody id="myTable">
-            <tr class="tableDetails"></tr>
-          </tbody>
-        </table>
-        <button onclick="addProduct()" class="addButton">Add Product</button>
-      </div>
+      <form>
+        <div id="bill">
+          <div id="billDetails" class="title">Billing Address</div>
+        </div>
+        <div id="ship">
+          <div id="shipDetails" class="title">Shipping Address</div>
+        </div>
+        <div id="dates">
+          <div class="datedetails"></div>
+        </div>
+
+        <div id="product">
+          <table>
+            <caption>
+              Product Details
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Product ID</th>
+                <th scope="col">Product Name</th>
+                <th scope="col">Qty</th>
+                <th scope="col">Unit Price</th>
+                <th scope="col">Total Price</th>
+                <th scope="col">Notes</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody id="myTable">
+              <tr class="tableDetails"></tr>
+            </tbody>
+          </table>
+          <a onclick="addProduct()" class="addButton">Add Product</a>
+        </div>
+        <a onclick="saveProduct()" style="float: right;" class="addButton">
+          SAVE
+        </a>
+      </form>
     </div>
   </body>
   <script src="https://use.fontawesome.com/f518588d33.js"></script>
   <script src="/js/index.js"></script>
   <script src="/js/product.js"></script>
   <script src="/js/addProduct.js"></script>
+  <script src="/js/saveProduct.js"></script>
   <script>
     getAddress();
     getProducts();

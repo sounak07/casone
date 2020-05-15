@@ -17,6 +17,7 @@ function getProducts() {
               <td>
                 <input
                   type="text"
+                  name="productId"
                   class="productField"
                   placeholder="Product ID"
                   value =${pro.id}
@@ -25,6 +26,7 @@ function getProducts() {
               <td>
                 <input
                   type="text"
+                  name="productName"
                   class="productField"
                   placeholder="Product Name"
                   value =${pro.Name}
@@ -33,6 +35,7 @@ function getProducts() {
               <td>
                 <input
                   type="number"
+                  name="productQty"
                   class="productField"
                   placeholder="Qty"
                   value =${pro.Qty}
@@ -42,6 +45,7 @@ function getProducts() {
               <td>
                 <input
                   type="number"
+                  name="unitPrice"
                   class="productField"
                   placeholder="Unit Price"
                   value =${pro.unitPrice}
@@ -51,6 +55,7 @@ function getProducts() {
               <td>
                 <input
                   type="number"
+                  name="totalPrice"
                   class="productField"
                   placeholder="Total Price"
                   value =${totalPrice}                  

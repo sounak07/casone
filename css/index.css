@@ -136,6 +136,7 @@ table th {
 .addButton:hover {
   background-color: #20b9e7; /* Green */
   color: white;
+  cursor: pointer;
 }
 
 /* Media queries for responsiveness */

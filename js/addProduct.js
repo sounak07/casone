@@ -1,8 +1,9 @@
 /** @format */
 
-function createInput(type, className, placeholder, value, dis) {
+function createInput(type, className, placeholder, value, dis, nam) {
   let inputTag = document.createElement('input');
   inputTag.type = type;
+  inputTag.name = nam;
   inputTag.className = className;
   inputTag.placeholder = placeholder;
   inputTag.value = value;
@@ -30,36 +31,54 @@ function addProduct() {
   let newCell5 = newRow.insertCell(5);
   let newCell6 = newRow.insertCell(6);
 
-  const idInput = createInput('text', 'productField', 'Product ID', '', false);
+  const idInput = createInput(
+    'text',
+    'productField',
+    'Product ID',
+    '',
+    false,
+    'productId'
+  );
   const nameInput = createInput(
     'text',
     'productField',
     'Product Name',
     '',
-    false
+    false,
+    'productName'
   );
   let qtyInput = createInput(
     'number',
     'productField',
     'Product Qty',
     '',
-    false
+    false,
+    'productQty'
   );
   let unitPriceInput = createInput(
     'number',
     'productField',
     'Unit Price',
     '',
-    false
+    false,
+    'unitPrice'
   );
   const totalPriceInput = createInput(
     'number',
     'productField',
     'Total Price',
     '',
-    true
+    true,
+    'totalPrice'
   );
-  const notes = createInput('text', 'productField', 'Notes', '', false);
+  const notes = createInput(
+    'text',
+    'productField',
+    'Notes',
+    '',
+    false,
+    'notes'
+  );
 
   const button = document.createElement('button');
   button.className = 'deleteButton';
