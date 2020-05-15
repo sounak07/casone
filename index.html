@@ -40,7 +40,9 @@
               <th scope="col"></th>
             </tr>
           </thead>
-          <tbody class="tableDetails"></tbody>
+          <tbody id="myTable">
+            <tr class="tableDetails"></tr>
+          </tbody>
         </table>
         <button onclick="addProduct()" class="addButton">Add Product</button>
       </div>
@@ -49,6 +51,7 @@
   <script src="https://use.fontawesome.com/f518588d33.js"></script>
   <script src="/js/index.js"></script>
   <script src="/js/product.js"></script>
+  <script src="/js/addProduct.js"></script>
   <script>
     getAddress();
     getProducts();

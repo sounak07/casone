@@ -36,7 +36,7 @@ function getProducts() {
                   class="productField"
                   placeholder="Qty"
                   value =${pro.Qty}
-                  onchange="return updatePrice(event,${i});" 
+                  onchange="return updatePrice(${i});" 
                 />
               </td>
               <td>
@@ -45,12 +45,12 @@ function getProducts() {
                   class="productField"
                   placeholder="Unit Price"
                   value =${pro.unitPrice}
-                  onchange="return updatePrice(event, ${i});" 
+                  onchange="return updatePrice( ${i});" 
                 />
               </td>
               <td>
                 <input
-                  type="text"
+                  type="number"
                   class="productField"
                   placeholder="Total Price"
                   value =${totalPrice}                  
@@ -71,6 +71,8 @@ function getProducts() {
             </tr>`;
         });
 
+        localStorage.setItem('id', i);
+
         var d1 = document.querySelector('.tableDetails');
         d1.insertAdjacentHTML('afterend', products);
       });
@@ -81,6 +83,7 @@ function getProducts() {
 }
 
 function deleteElement(id) {
+  console.log('hi');
   document.getElementById(id).remove();
 }
 
@@ -91,7 +94,7 @@ function setValue(newValue, id) {
   unit.value = newValue;
 }
 
-function updatePrice(event, id) {
+function updatePrice(id) {
   let t = document.getElementById(id);
   var unit = t.cells[2].children[0].value;
   var price = t.cells[3].children[0].value;
