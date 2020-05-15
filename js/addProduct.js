@@ -12,7 +12,9 @@ function createInput(type, className, placeholder, value, dis) {
 }
 
 function addProduct() {
-  let newId = localStorage.getItem('id') + 1;
+  let newId = parseInt(localStorage.getItem('id')) + 1;
+
+  localStorage.setItem('id', newId);
 
   let tableRef = document.getElementById('myTable');
 
