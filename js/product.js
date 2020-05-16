@@ -20,7 +20,7 @@ function getProducts() {
                   name="productId"
                   class="productField"
                   placeholder="Product ID"
-                  value =${pro.id}
+                  value ="${pro.id}"
                 />
               </td>
               <td>
@@ -29,7 +29,7 @@ function getProducts() {
                   name="productName"
                   class="productField"
                   placeholder="Product Name"
-                  value =${pro.Name}
+                  value ="${pro.Name}"
                 />
               </td>
               <td>
@@ -38,7 +38,7 @@ function getProducts() {
                   name="productQty"
                   class="productField"
                   placeholder="Qty"
-                  value =${pro.Qty}
+                  value ="${pro.Qty}"
                   onchange="return updatePrice(${i});" 
                 />
               </td>
@@ -48,7 +48,7 @@ function getProducts() {
                   name="unitPrice"
                   class="productField"
                   placeholder="Unit Price"
-                  value =${pro.unitPrice}
+                  value ="${pro.unitPrice}"
                   onchange="return updatePrice( ${i});" 
                 />
               </td>
@@ -58,16 +58,17 @@ function getProducts() {
                   name="totalPrice"
                   class="productField"
                   placeholder="Total Price"
-                  value =${totalPrice}                  
+                  value ="${totalPrice}"               
                   disabled
                 />
               </td>
               <td>
                 <input
                   type="text"
+                  name="notes"
                   class="productField"
                   placeholder="Notes"
-                  value =${pro.notes}
+                  value ="${pro.notes}"
                 />
               </td>    
               <td>

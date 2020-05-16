@@ -1,15 +1,15 @@
 /** @format */
 
 function formCreate(incomingData, id) {
-  let output = `      
-        <input type="text" class="inputStyle" value=${incomingData[id].firstName} placeholder="First Name" >
-        <input type="text" class="inputStyle" value=${incomingData[id].lastName} placeholder="Last Name" />
-        <input type="text" class="inputStyle" value=${incomingData[id].Address1} placeholder="Address Line 1" />
-        <input type="text" class="inputStyle" value=${incomingData[id].Address2} placeholder="Address Line 2" />
-        <input type="text" class="inputStyle" value=${incomingData[id].City} placeholder="City" />
-        <input type="text" class="inputStyle" value=${incomingData[id].State} placeholder="State" />
-        <input type="number" class="inputStyle" value=${incomingData[id].Zipcode} placeholder="Zipcode" />
-        <input type="text" class="inputStyle" value=${incomingData[id].Country} placeholder="Country" />      
+  let output = `  
+        <input type="text" class="inputStyle" value="${incomingData[id].firstName}" placeholder="First Name" >
+        <input type="text" class="inputStyle" value="${incomingData[id].lastName}" placeholder="Last Name" />
+        <input type="text" class="inputStyle" value="${incomingData[id].Address1}" placeholder="Address Line 1" />
+        <input type="text" class="inputStyle" value="${incomingData[id].Address2}" placeholder="Address Line 2" />
+        <input type="text" class="inputStyle" value="${incomingData[id].City}" placeholder="City" />
+        <input type="text" class="inputStyle" value="${incomingData[id].State}" placeholder="State" />
+        <input type="number" class="inputStyle" value="${incomingData[id].Zipcode}" placeholder="Zipcode" />
+        <input type="text" class="inputStyle" value="${incomingData[id].Country}" placeholder="Country" />      
     `;
 
   return output;
