@@ -1,5 +1,7 @@
 /** @format */
 
+// function to create input fields with relevent data
+
 function createInput(type, className, placeholder, value, dis, nam) {
   let inputTag = document.createElement('input');
   inputTag.type = type;
@@ -11,6 +13,8 @@ function createInput(type, className, placeholder, value, dis, nam) {
 
   return inputTag;
 }
+
+//function to a new empty product row to the table
 
 function addProduct() {
   let newId = parseInt(localStorage.getItem('id')) + 1;
@@ -84,6 +88,8 @@ function addProduct() {
   button.className = 'deleteButton';
   button.type = 'button';
   button.textContent = 'Delete';
+
+  // adding of event listeners after creating fields
 
   button.addEventListener('click', function (e) {
     deleteElement(newId);

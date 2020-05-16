@@ -1,5 +1,8 @@
 /** @format */
 
+// function to check for invalid inputs and if non found save the data
+// if invalid data found alert the user and change border color of invalid input field
+
 function saveProduct(e) {
   const pId = document.getElementsByName('productId');
   const pName = document.getElementsByName('productName');

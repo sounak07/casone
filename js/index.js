@@ -1,5 +1,7 @@
 /** @format */
 
+//function to inject form data in forms and returning the built component
+
 function formCreate(incomingData, id) {
   let output = `  
         <input type="text" class="inputStyle" value="${incomingData[id].firstName}" placeholder="First Name" >
@@ -14,6 +16,8 @@ function formCreate(incomingData, id) {
 
   return output;
 }
+
+//function to get the addresses by calling to the api and appending the new built components to DOM
 
 function getAddress() {
   fetch(`https://raw.githubusercontent.com/sounak07/jsonData/master/data.json`)

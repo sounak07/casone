@@ -136,38 +136,3 @@ table th {
   color: white;
   cursor: pointer;
 }
-
-/* Media queries for responsiveness */
-
-/* @media (max-width: 568px) {
-  #home {
-    padding: 300px 45px 158px 64px;
-    text-align: center;
-  }
-
-  #title {
-    font-size: 38px;
-  }
-}
-
-@media (max-width: 480px) {
-  #home {
-    padding: 300px 45px 158px 64px;
-    text-align: center;
-  }
-
-  #title {
-    font-size: 38px;
-  }
-}
-
-@media (max-width: 415px) {
-  #home {
-    padding: 300px 45px 158px 64px;
-    text-align: center;
-  }
-
-  #title {
-    font-size: 33px;
-  }
-} */

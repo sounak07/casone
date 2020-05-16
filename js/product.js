@@ -1,5 +1,7 @@
 /** @format */
 
+// function to get the values of products and injecting into the dom
+
 function getProducts() {
   fetch(
     `https://raw.githubusercontent.com/sounak07/jsonData/master/productData.json`
@@ -88,10 +90,14 @@ function getProducts() {
     });
 }
 
+// function to delete row by id on pressing delete
+
 function deleteElement(id) {
   console.log('hi');
   document.getElementById(id).remove();
 }
+
+// function to set the updated value of totalPrice
 
 function setValue(newValue, id) {
   let t = document.getElementById(id);
@@ -99,6 +105,8 @@ function setValue(newValue, id) {
 
   unit.value = newValue;
 }
+
+// function to get the values of unit price and unit qty and passing it to setValue
 
 function updatePrice(id) {
   let t = document.getElementById(id);
