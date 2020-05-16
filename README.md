@@ -1,3 +1,3 @@
 <!-- @format -->
 
-Run index.html file on browser
+Run index.html on any live server.(VS Code live server)
